@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "tasmota-http"
+version = "0.1.0"
+description = "Small Python client for Tasmota HTTP command API"
+readme = "README.md"
+requires-python = ">=3.10"
+authors = [{ name = "Local API Docs Workspace" }]
+keywords = ["tasmota", "http", "iot", "home-automation"]
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "License :: OSI Approved :: MIT License",
+  "Operating System :: OS Independent",
+  "Topic :: Home Automation",
+]
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
